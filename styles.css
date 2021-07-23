@@ -28,3 +28,11 @@ nav {
   text-decoration: none;
   text-align: right;
 }
+
+.landing-view {
+  height: 95vh;
+}
+
+#landing-image {
+  width: 100%;
+}
