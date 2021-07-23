@@ -30,7 +30,7 @@ nav {
 }
 
 .landing-view {
-  height: 85vh;
+  height: 65vh;
   position: relative;
 }
 
@@ -41,7 +41,7 @@ nav {
 
 #landing-title {
   position: absolute;
-  transform: translate(-50%, -50%);
   color: white;
   font-size: 3.4rem;
+  z-index: 1;
 }
