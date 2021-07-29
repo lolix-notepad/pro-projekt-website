@@ -7,15 +7,14 @@ export default function SingUp() {
   return (
     <div className="">
       <Head>
-        <title>SingUp</title>
-        <meta name="description" content="Sing up form" />
+        <title>SingIn</title>
+        <meta name="description" content="Sing in form" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       <main className="container bg-gray-100 px-4 py-4 mt-6">
         <h1 className="text-center">
-          Sing Up
+          Sing In
         </h1>
         <p>
           This is a form to be register
