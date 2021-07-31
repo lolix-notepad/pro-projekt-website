@@ -10,5 +10,5 @@ module.exports = {
     path: "",
   },
   basePath: '/pro-projekt-website',
-  assetPrefix: '/pro-projekt-website'
+  assetsPrefix: '/pro-projekt-website'
 }
