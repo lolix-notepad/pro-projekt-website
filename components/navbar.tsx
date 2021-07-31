@@ -1,37 +1,29 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade])
-
 export default function Navbar() {
   return (
-      <nav className="relative w-full h-screen flex">
-        <Swiper
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          className="w-full h-screen"
-          allowTouchMove={false}
-          loop
-          autoplay={{ delay: 4000 }}
-          speed={1500}
-          disableOnInteraction={false}
-        >
+      <nav className="w-full h-20 z-10 sticky bg-white top-0 bkg-red-800 px-4 py-4 flex items-center">
+          <div className="bgk-green-900 inline-block">
+            <Link className="" href="/">
+              <p className="cursor-pointer text-xl inline">
+                Pro projekt
+              </p>
+            </Link>
+          </div>
 
-
-
-          <SwiperSlide className="text-xl text-white text-center text-bold bg-red-400 w-screen h-auto">
-            <div className="w-full h-screen absolute bgk-yellow-200 z-0">
-              <Image className="" layout="fill" objectFit="cover" alt="cryptocurrency" src="/Slider-Cryptocurrency.jpg" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="text-xl text-white text-center text-bold bg-blue-400 w-screen h-auto">Slide 2</SwiperSlide>
-          <SwiperSlide className="text-xl text-white text-center text-bold bg-yellow-400 w-screen h-auto">Slide 3</SwiperSlide>
-        </Swiper>
+          <div className="ml-auto space-x-2 bgk-blue-400 inline-block">
+            <Link href="/sing-in">
+              <p className="cursor-pointer inline">
+                sing in
+              </p>
+            </Link>
+            <Link className="" href="/sing-up">
+              <button className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded font-bold text-white">
+                sing up
+              </button>
+            </Link>
+          </div>
       </nav>
     )
 }

@@ -2,9 +2,9 @@
 
 export default function Footer() {
   return (
-      <footer className="mt-10">
-        <p>
-          fise2we C {new Date().getFullYear()}
+      <footer className="py-8 bg-yellow-500 w-full mt-20">
+        <p className="text-center text-white">
+          fise2we © {new Date().getFullYear()}
         </p>
       </footer>
     )
