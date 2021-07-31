@@ -1,17 +1,11 @@
-emport Image from 'next/image'
+import Image from 'next/image'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade])
 
-interface IImageLoader {
-  src: string
-}
-
-const imageLoader = ({ src }: IImageLoader) => {
-    return `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcolorlib.com%2Fwp%2Fwp-content%2Fuploads%2Fsites%2F2%2F404-error-template-16.png&f=1&nofb=1`
-}
+import ImageLoader from './image-loader'
 
 export default function Carousel() {
   return (
@@ -31,7 +25,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
-                loader={imageLoader}
+                loader={ImageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 
@@ -44,7 +38,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
-                loader={imageLoader}
+                loader={ImageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 
@@ -57,7 +51,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
-                loader={imageLoader}
+                loader={ImageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 

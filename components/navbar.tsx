@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
+// import ImageLoader from './image-loader'
 
 export default function Navbar() {
   return (
