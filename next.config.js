@@ -8,5 +8,7 @@ module.exports = {
   images: {
     loader: "imgix",
     path: "",
-  }
+  },
+  basePath: '/pro-projekt-website',
+  assetPrefix: '/pro-projekt-website'
 }
