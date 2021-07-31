@@ -5,6 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade])
 
+const imageLoader = ({ src }) => {
+    return `https://github.com/`
+}
+
 export default function Carousel() {
   return (
       <div className="relative w-full h-screen flex">
@@ -23,6 +27,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
+                loader={imageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 
@@ -35,6 +40,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
+                loader={imageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 
@@ -47,6 +53,7 @@ export default function Carousel() {
            >
             <div className="w-full h-screen absolute bgk-yellow-200 z-0"> 
               <Image className="" 
+                loader={imageLoader}
                 layout="fill" 
                 objectFit="cover" 
                 alt="cryptocurrency" 
